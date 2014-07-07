@@ -3,12 +3,8 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-        <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
-    <link href="css/demo.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>KML Layers</title>
@@ -43,31 +39,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <body>
 
 
-          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-                <span class="sr-only">Toggle navigation</span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-01">
-              <ul class="nav navbar-nav navbar-left">           
-                <li><a href="#fakelink">Location<span class="fui-location"></span></a></li>
-                <li><a href="#fakelink">Data<span class="fui-eye" style="margin-left : 5px;"></span></a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
-                  <span class="dropdown-arrow"></span>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Settings<span class="fui-gear" style="margin-left : 5px;"></span></a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Log Out<span class="fui-cross" style="margin-left : 5px;"></span></a></li>
-                  </ul>
-                </li>
-               </ul>
-            </div><!-- /.navbar-collapse -->
-          </nav><!-- /navbar -->
-      <div id="map-canvas"></div>
+
+      <div id='cssmenu'>
+        <ul>
+           <li class='active'><a href='index.html'>Home</a></li>
+           <li><a href='#'>Data</a></li>
+           <li class='has-sub '><a href='#'>Account</a>
+              <ul>
+                 <li><a href='#'>Settings</a></li>
+                 <li class="divider"></li>
+                 <li><a href='#'>Log Out</a></li>
+              </ul>
+           </li>
+           <li><a href='#'>Contact</a></li>
+        </ul>
+      </div>
+
+     <div id="map-canvas"></div>
 
 
 
